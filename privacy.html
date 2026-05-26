@@ -47,13 +47,16 @@
   <p>Aykiz reads and writes the following on behalf of the single account
   holder, only when explicitly enabled in app settings:</p>
   <ul>
-    <li><strong>Google Gmail</strong> — read-only access to message
-    metadata (subjects and senders) for up to three most-recent unread
-    messages, surfaced on the Today screen.</li>
-    <li><strong>Google Calendar</strong> — read access to today's events,
+    <li><strong>Google Gmail</strong> - read access to message metadata
+    (subjects, senders, snippets) to surface unread messages and let the
+    in-app assistant triage. Also draft-compose access: the assistant
+    drafts outreach emails into the Gmail Drafts folder, but the user
+    must open Gmail and tap Send themselves. The app never sends mail
+    autonomously.</li>
+    <li><strong>Google Calendar</strong> - read access to today's events,
     and write access to create or edit events when the user requests it
     in the assistant chat.</li>
-    <li><strong>Anthropic API</strong> — chat messages sent to Claude
+    <li><strong>Anthropic API</strong> - chat messages sent to Claude
     when the user opens a conversation thread.</li>
   </ul>
 
