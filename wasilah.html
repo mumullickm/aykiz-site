@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wasilah - case study | Aykiz Intelligence</title>
+<meta name="description" content="An Islamic companion app for Bangladesh, designed solo. Sacred-vs-daily typography, three App Store rejections, and the v1.1 to v1.2 redesign.">
+<meta name="author" content="Miraz Mullick">
+<meta name="theme-color" content="#F6F2EB">
+<link rel="canonical" href="https://mumullickm.github.io/aykiz-site/wasilah.html">
+<link rel="stylesheet" href="aykiz.css">
+
+<meta property="og:title" content="Wasilah - case study">
+<meta property="og:description" content="An Islamic companion app for Bangladesh. Built solo. Two stores. Real families.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mumullickm.github.io/aykiz-site/wasilah.html">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="./" class="site-header__brand">aykiz intelligence</a>
+  <nav class="site-header__nav">
+    <a href="./">home</a>
+    <a href="probashi.html">probashi</a>
+    <a href="https://www.linkedin.com/in/mumullick" target="_blank" rel="noopener">linkedin</a>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <div class="case-hero">
+      <div class="case-hero__icon"><img src="wasilah/icon.svg" alt="Wasilah icon"></div>
+      <div class="eyebrow">case study &middot; 2026</div>
+      <h1 class="display">Wasilah.</h1>
+      <p class="tag">An Islamic companion app for Bangladeshi Muslims. Designed solo, shipped to two stores, used by real families.</p>
+    </div>
+
+    <dl class="facts">
+      <div><dt>live since</dt><dd>May 2026</dd></div>
+      <div><dt>stores</dt><dd>Play + iOS</dd></div>
+      <div><dt>market</dt><dd>Bangladesh-first</dd></div>
+      <div><dt>price</dt><dd>free, forever</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <div class="kicker">the brief</div>
+    <h2 class="section-head">A Bangla-first Islamic app, not a localized import.</h2>
+    <p class="lead">Bangladesh has over 150 million Muslims. Most popular Islamic apps were built for Arabic-speaking or Indonesian audiences and translated into Bangla as an afterthought. The brief was the opposite: design for Bengali Muslim users first. Local prayer time calculation methods, BDT Zakat, Bangla as a primary surface language, hadith and Quran access in the three scripts that actually matter here, English alongside Bangla and Arabic.</p>
+    <p>No monetization plan. No upgrade tier. The KPI is reach.</p>
+  </section>
+
+  <section>
+    <div class="kicker">design principle 01</div>
+    <h2 class="section-head">The sacred-vs-daily font rule.</h2>
+    <p>Not every line of text in an Islamic app carries the same weight. The Adhan does. A settings toggle does not. Most apps in this category treat all copy with the same serif throughout, which flattens what should be a hierarchy of reverence.</p>
+    <p>Wasilah uses two type families on purpose. EB Garamond is reserved for sacred moments only: the Adhan call, dua text, the app tagline, hadith body. Geist Sans handles everything else: navigation, time labels, prayer countdowns, settings. The split is invisible until you notice it, and then it changes how the app feels to use.</p>
+
+    <div class="pull">The font choice is the brand. Not the logo, not the palette, not the icon. The decision of when to be quiet and when to be sacred.</div>
+
+    <div class="frames">
+      <div class="frame">
+        <img src="wasilah/06-home-overview.png" alt="Wasilah home overview">
+        <div class="frame__caption">home &middot; daily UI in Geist</div>
+      </div>
+      <div class="frame">
+        <img src="wasilah/05-prayer-times.png" alt="Wasilah prayer times">
+        <div class="frame__caption">salah &middot; times in mono numerals</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="kicker">design principle 02</div>
+    <h2 class="section-head">Three App Store rejections, three lessons.</h2>
+    <p>Apple App Review rejected Wasilah three times across builds 5 through 9. Each rejection taught me something specific about designing for regulated markets. I am naming the citation codes here because I think most portfolios hide their rejections, and that absence is itself a signal.</p>
+
+    <ol class="lessons">
+      <li>
+        <strong>Build 5 - 5.1.1(iv) - location permission pre-prompt UX</strong>
+        <p>Apple flagged the way we asked for location permission as overreaching the iOS pattern. The fix was to remove our custom pre-prompt and let the system dialog appear in the moment the user requested a prayer time. Lesson: in regulated markets, the platform's own pattern is the safest brand asset you have.</p>
+      </li>
+      <li>
+        <strong>Build 9 - guidance 4.3 - code similarity</strong>
+        <p>An Apple advisor flagged similarity to other Islamic apps at the binary level. The fix required swapping out shared third-party libraries for Apple-first-party APIs: CLLocationManager, AVQueuePlayer, UNUserNotificationCenter, WidgetKit, URLSession, on-device PrayTimes. Lesson: differentiation in regulated submission queues is structural, not visual. The code under the hood matters as much as the brand on top.</p>
+      </li>
+      <li>
+        <strong>What both rejections demanded</strong>
+        <p>Pre-submission discipline. Reading the full guideline citation rather than the summary email. Treating App Review as a real audience with their own brief, not as a customs official to be hurried past. This is the same posture you need for any market with regulatory gatekeepers, which is most of the markets I want to work in next.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="kicker">design principle 03</div>
+    <h2 class="section-head">v1.1 to v1.2: the compact-density rebuild.</h2>
+    <p>The v1.1 home screen was the first thing real users complained about. The dashboard was technically correct and emotionally cold. Six tiles of equal weight, no center of gravity, no clear answer to the question "what now."</p>
+    <p>v1.2 rebuilt around a single anchor: the next prayer. Everything else demoted to secondary. A Salah Tracker added because the most common request from users was "show me whether I prayed today." A light mode shipped because the original dark-only choice excluded readers who use their phones outdoors at Asr and Maghrib. The Asr Hanafi calculation method was added after Bangladeshi users pointed out the Shafi default did not match their daily practice.</p>
+
+    <div class="frames">
+      <div class="frame">
+        <img src="wasilah/01-salah-guide.png" alt="Salah guide in v1.2">
+        <div class="frame__caption">v1.2 &middot; salah guide</div>
+      </div>
+      <div class="frame">
+        <img src="wasilah/03-chosen-for-you.png" alt="Today suggestion card">
+        <div class="frame__caption">v1.2 &middot; today suggestion</div>
+      </div>
+      <div class="frame">
+        <img src="wasilah/04-quran-reader.png" alt="Quran reader">
+        <div class="frame__caption">v1.2 &middot; quran reader</div>
+      </div>
+      <div class="frame">
+        <img src="wasilah/07-qibla.png" alt="Qibla compass">
+        <div class="frame__caption">v1.2 &middot; qibla compass</div>
+      </div>
+    </div>
+
+    <p>Most of the redesign was subtraction, not addition. Removing what felt like a "complete" feature set and accepting that an Islamic app is closer to a habit than a tool.</p>
+  </section>
+
+  <section>
+    <div class="kicker">what is next</div>
+    <h2 class="section-head">The honest gap.</h2>
+    <p>As of this writing, Wasilah has 23 currently installed users, 38 lifetime installs, and roughly 95 percent of the audience in Bangladesh. wasilah.site pulls a handful of visitors a week against a category-median in the hundreds. I am publishing this case study at this size because I would rather show how I think than wait until the numbers are vanity-tier.</p>
+    <p>A second case study is planned for late 2026 with six to twelve months of rolling retention data, the v1.3 redesign findings, and whatever the iOS launch teaches me. Until then, this page is the work in flight.</p>
+    <p class="dim">If you are hiring brand or marketing for a Muslim-consumer product, especially in the religious-tourism and hospitality space in KSA, I would like to hear from you. <a href="mailto:mumullickm@gmail.com">mumullickm@gmail.com</a>.</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div>aykiz intelligence &middot; miraz uddin mullick &middot; dhaka</div>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/mumullick" target="_blank" rel="noopener">linkedin</a>
+    <a href="https://github.com/mumullickm" target="_blank" rel="noopener">github</a>
+    <a href="mailto:mumullickm@gmail.com">email</a>
+    <a href="privacy.html">privacy</a>
+    <a href="terms.html">terms</a>
+    <a href="delete-data.html">delete data</a>
+  </div>
+</footer>
+
+</body>
+</html>

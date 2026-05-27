@@ -1,68 +1,99 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Aykiz Intelligence</title>
-<meta name="description" content="A small personal assistant. Built by Miraz Mullick under Aykiz Intelligence." />
-<style>
-  :root{
-    --ink:#0B0712;
-    --cream:#F6F2EB;
-    --cream-2:#EDE6DB;
-    --teal:#6BC5BD;
-    --muted:#6B6573;
-    --line:rgba(11,7,18,.10);
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:var(--cream);color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",system-ui,sans-serif;
-    -webkit-font-smoothing:antialiased;line-height:1.55}
-  .wrap{max-width:640px;margin:0 auto;padding:80px 28px 120px}
-  .eyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
-    font-size:11px;letter-spacing:2px;color:var(--muted);text-transform:lowercase}
-  h1{font-family:"EB Garamond",Garamond,Georgia,serif;font-size:64px;
-    font-weight:400;letter-spacing:-1.5px;line-height:.95;margin:24px 0 14px}
-  .tag{font-family:"EB Garamond",Garamond,Georgia,serif;font-style:italic;
-    font-size:20px;color:var(--muted);margin-bottom:48px}
-  .bar{width:24px;height:1px;background:var(--teal);margin:32px 0 14px}
-  p{margin-bottom:14px;font-size:15px;color:var(--ink)}
-  ul{margin:8px 0 14px 22px}
-  li{font-size:15px;margin-bottom:6px;color:var(--ink)}
-  a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--teal);
-    text-underline-offset:3px}
-  a:hover{color:var(--teal)}
-  .links{display:flex;flex-wrap:wrap;gap:18px;margin-top:48px;padding-top:24px;
-    border-top:1px solid var(--line)}
-  .links a{font-family:ui-monospace,monospace;font-size:12px;
-    text-transform:lowercase;letter-spacing:.5px}
-  .foot{margin-top:40px;font-family:ui-monospace,monospace;font-size:11px;
-    color:var(--muted);letter-spacing:1px}
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aykiz Intelligence - Brand work for Muslim consumers</title>
+<meta name="description" content="Miraz Mullick. Brand manager with eight years across aviation, advertising, and consumer goods. Now building products for Muslim audiences under Aykiz Intelligence.">
+<meta name="author" content="Miraz Mullick">
+<meta name="theme-color" content="#F6F2EB">
+<link rel="canonical" href="https://mumullickm.github.io/aykiz-site/">
+<link rel="stylesheet" href="aykiz.css">
+
+<meta property="og:title" content="Aykiz Intelligence">
+<meta property="og:description" content="Brand work for Muslim consumers. By Miraz Mullick.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mumullickm.github.io/aykiz-site/">
 </head>
 <body>
-<div class="wrap">
-  <div class="eyebrow">aykiz intelligence</div>
-  <h1>A small assistant<br/>that answers.</h1>
-  <div class="tag">Thinking, refined.</div>
 
-  <div class="bar"></div>
+<header class="site-header">
+  <a href="./" class="site-header__brand">aykiz intelligence</a>
+  <nav class="site-header__nav">
+    <a href="wasilah.html">case study</a>
+    <a href="probashi.html">probashi</a>
+    <a href="https://www.linkedin.com/in/mumullick" target="_blank" rel="noopener">linkedin</a>
+  </nav>
+</header>
 
-  <p>Aykiz is the personal app I build for myself. It holds my prayer rhythm,
-  my work in flight, my goals, and a quiet conversation with Claude. It runs
-  on my phone alone.</p>
+<main class="wrap">
 
-  <p>This page exists so Google, Anthropic, and anyone else who asks can find
-  a real privacy policy, terms, and a way to delete data. Below.</p>
+  <section>
+    <div class="eyebrow">aykiz intelligence</div>
+    <h1 class="display">Brand work for <em>Muslim consumers.</em></h1>
+    <p class="tag">Built by Miraz Mullick. Eight years aviation, advertising, automotive. Now shipping products for the deen.</p>
+    <div class="bar bar--wide"></div>
+    <p class="lead">I have led brand and campaign work at US-Bangla Airlines, Hajee Air, Lifan Motors, and Dentsu International. Today I build my own consumer apps for Bengali Muslim audiences and the BD-to-KSA corridor.</p>
+  </section>
 
-  <div class="links">
+  <section>
+    <div class="kicker">shipped</div>
+    <h2 class="section-head">Three products in flight.</h2>
+    <p class="dim">Each one built solo. Brand, code, store submission, social.</p>
+
+    <div class="cards">
+
+      <a class="card" href="wasilah.html">
+        <div class="card__icon"><img src="wasilah/icon.svg" alt=""></div>
+        <div>
+          <div class="card__title">Wasilah</div>
+          <p class="card__line">Islamic companion app for Bangladesh. Live on Google Play. Designed for Bengali Muslim users specifically, not localized from a foreign template.</p>
+        </div>
+        <div class="card__meta">case study &rarr;</div>
+      </a>
+
+      <div class="card" style="cursor:default">
+        <div class="card__icon">D</div>
+        <div>
+          <div class="card__title">Drafy</div>
+          <p class="card__line">A free, offline QR generator. Closed-test on Google Play. The spoiler play against paywalled QR utilities that charge for what should be free.</p>
+        </div>
+        <div class="card__meta">closed test</div>
+      </div>
+
+      <a class="card" href="probashi.html">
+        <div class="card__icon">P</div>
+        <div>
+          <div class="card__title">Probashi</div>
+          <p class="card__line">A KSA-relocation guide for Bangladeshi workers. In build. Halal-income companion product for the migration corridor I care about most.</p>
+        </div>
+        <div class="card__meta">in build &rarr;</div>
+      </a>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="kicker">about</div>
+    <h2 class="section-head">Who I am.</h2>
+    <p>Brand Manager at US-Bangla Group (2021-2025), where I worked on the airline's Hajj and Umrah routes into Saudi Arabia. Senior Brand Manager at Hajee Air. Before that, Lifan Motors and Dentsu International on the creative side.</p>
+    <p>MBA in International Marketing, Freie Universit&auml;t Berlin (in progress, 2024-2027). Business Analytics certificate from Harvard Business School Online. Computer Science from Ahsanullah University of Science and Technology.</p>
+    <p>I am building my next chapter around religious tourism, hospitality, and halal commerce in the Madinah and Mecca corridor. The products on this site are part of that work.</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div>aykiz intelligence &middot; miraz uddin mullick &middot; dhaka</div>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/mumullick" target="_blank" rel="noopener">linkedin</a>
+    <a href="https://github.com/mumullickm" target="_blank" rel="noopener">github</a>
+    <a href="mailto:mumullickm@gmail.com">email</a>
     <a href="privacy.html">privacy</a>
     <a href="terms.html">terms</a>
     <a href="delete-data.html">delete data</a>
-    <a href="mailto:mumullickm@gmail.com">contact</a>
   </div>
+</footer>
 
-  <div class="foot">aykiz intelligence · miraz uddin mullick · dhaka</div>
-</div>
 </body>
 </html>
